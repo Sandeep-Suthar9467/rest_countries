@@ -8,7 +8,6 @@ const axios = require('axios');
 
  function Home() {
     const [countries,setCountries]=useState([]);
-    const [error,setError]=useState(false);
     const [loading,setLoading]=useState(false);
     function refreshPage() {
       window.location.reload(false);
@@ -22,8 +21,8 @@ const axios = require('axios');
         .then(res => {
           setLoading(false);
           setCountries(res.data);
-        }).catch( error => {
-          setError(true);
+        }).catch( () => {
+        setCountries('Error')
         }
           )},
         []);    
