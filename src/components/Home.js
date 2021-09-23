@@ -47,6 +47,8 @@ const axios = require('axios');
                  <p>Population : {millify(country.population)}</p>
                  <p> Borders:</p>
                  <p className='border'>{country?.borders?.map((border) => <span>{border}</span>)}</p>
+                 <p> Language:</p>
+                 <p className='language'>{country?.languages?.map((language) => <span>{language.name}</span>)}</p>
              </div>
          </div>
             ))}
