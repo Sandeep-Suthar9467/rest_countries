@@ -1,30 +1,35 @@
-.country-card-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 15px;
-}
+@media (min-width: 1281px) {
+    .country-card-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px;
+    }
+    
+    .country{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.089);
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .image img{
+        width: 150px;
+        height: 100px;
+    
+    }
+    /* CSS */
+    
+  }
 
-.country{
-    display: flex;
-    flex-direction: column;
-    min-width: 350px;
-    background: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.089);
-}
-.image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-}
-.image img{
-    width: 150px;
-    height: 100px;
-
-}
 .border,.language{
     display: flex;
     flex-wrap: wrap;
@@ -38,3 +43,184 @@
     height: 50px;
     margin: auto;
 }
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .country-card-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+    }
+    
+    .country{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+     
+       
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .image img{
+        width: 150px;
+        height: 100px;
+    
+    }
+   
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .country-card-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        font-size: 12px;
+    }
+    .country{
+        display: flex;
+        flex-direction: column;
+        min-width: 220px;
+        max-width: 280px;
+        background: #fff;
+        padding: 8px;
+        margin: 8px;
+       
+    }
+    .image img{
+        width: 90px;
+        height: 45px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .country-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        font-size: 10px;
+    }
+    
+    .country{
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        max-width: 280px;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.089);
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .image img{
+        height: 60px;
+    
+    }
+    /* CSS */
+    
+  }
+
+.border,.language{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.country-details > p > span {
+    margin: 5px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  
+  @media  (max-width: 480px) {
+    .country-card-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        font-size: 10px;
+    }
+    
+    .country{
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.089);
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .image img{
+        height: 60px;
+    
+    }
+    /* CSS */
+    
+  }
+
+.border,.language{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.country-details > p > span {
+    margin: 5px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    /* CSS */
+    
+    /* CSS */
+    
+  }
