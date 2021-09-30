@@ -37,7 +37,7 @@ const axios = require('axios');
               
              <div className='country'>
              <div className='image'>
-                 <img src={country.flags[0]} alt="flage"/>
+                 <img src={country.flag} alt="flags"/>
              </div>
              <div className='country-details'>
                  <h2>{country.name}</h2>
